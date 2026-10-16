@@ -1,5 +1,6 @@
 # Resume Customizer
-
+#k1 = AQ.
+#k2 = Ab8RN6K-APS6xpKKso70I0DF5IXClCcLdoDGdiQwjEGGjOvP9w
 Paste a job description, upload a resume (PDF or DOCX), and get a version of that resume rewritten for the role, with a match score, a diff of every change, keyword suggestions, an ATS checklist, a cover letter, and downloads in PDF / DOCX / text.
 
 **Live app:** `https://<your-app>.vercel.app`  ·  **API:** `https://<your-api>.onrender.com/docs`
