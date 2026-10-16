@@ -1,0 +1,19 @@
+# Render Blueprint: backend API (deploy the frontend on Vercel)
+services:
+  - type: web
+    name: resume-customizer-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: CORS_ORIGINS
+        sync: false   # set to your Vercel URL, e.g. https://resume-customizer.vercel.app
+      - key: PYTHON_VERSION
+        value: 3.12.7
