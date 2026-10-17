@@ -6,7 +6,7 @@ import { DiffPaper, EmptyPaper, ResumePaper } from "@/components/ResumeView";
 import { customizeResume, downloadResume, generateCoverLetter } from "@/lib/api";
 import type { DownloadFormat, Version } from "@/lib/types";
 
-const JD_MIN = 50;
+const JD_MIN = 20;
 const JD_MAX = 12000;
 const SECTIONS = [
   { id: "summary", label: "Summary" },
